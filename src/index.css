@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Inter, "san-serif";
+}
+
+:root {
+  --text-color: #fff;
+  --nav-background: #001c48;
+}
+
+/* Resuable states */
+h2 {
+  font-size: 32px;
+}
+a {
+  font-size: 16px;
+}
+
+/* Nav section starts */
+.nav-section {
+  & .nav-container {
+    width: 100%;
+    padding: 12px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-background);
+    & .logo {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      & h2 {
+        font-weight: 500;
+        color: var(--text-color);
+        font-family: Exo, "san-serif";
+      }
+    }
+    & .nav-link {
+      display: flex;
+      align-items: center;
+      & nav {
+        & ul {
+          display: flex;
+          gap: 32px;
+          & li {
+            list-style: none;
+            & a {
+              text-decoration: none;
+              color: var(--text-color);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    & .contact-link {
+      display: inline-flex;
+      justify-content: center;
+      width: 116.31px;
+      height: 36px;
+      background-color: #e53b3a;
+      border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      & a{
+        font-size: 14px;
+        padding: 8px 16px;
+        color: var(--text-color);
+        text-decoration: none;
+      }
+    }
+  }
+}
